@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>se.iths.jelleryd</groupId>
-	<artifactId>webshop</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<groupId>com.example</groupId>
+	<artifactId>WebShopUltime</artifactId>
+	<version>1.0</version>
 	<name>webshop</name>
 	<description>Spring Boot Web Shop</description>
 
