@@ -1,0 +1,27 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+	<body>
+	
+		<div th:fragment="main-menu"  >
+			<a href="/SimpleWebShop/webshop/templates/categories.html">Products</a>
+			&nbsp;
+			<a href="/SimpleWebShop/webshop/templates/shoppingCart.html">Shopping Cart</a>
+			&nbsp;
+			<a href="/SimpleWebShop/webshop/templates/profile.html">Profile</a>
+			&nbsp;
+			<a th:href="@{/logout}">Logout</a>
+		</div>
+
+		<div th:fragment="main-admin-menu"  >
+			<a href="/SimpleWebShop/webshop/templates/adminHome.html">Admin Home</a>
+			&nbsp;
+			<a href="/SimpleWebShop/webshop/templates/logout.html">Logout</a>
+		</div>
+		
+		<p th:fragment="footer-menu">
+			<a href="/SimpleWebShop/webshop/templates/privacy.html">Privacy</a>
+			<a href="/SimpleWebShop/webshop/templates/terms.html">Terms and Conditions</a>
+		</p>
+	
+	</body>
+</html>
