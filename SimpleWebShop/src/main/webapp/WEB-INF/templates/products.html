@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Products</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+	<div th:replace="fragments/menu :: main-menu" >The main menu goes here</div>
+	
+	<h1><span th:text="${category}"> heading </span></h1>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Title &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</th>
+				<th>Format &nbsp; &nbsp; &nbsp;</th>
+				<th>Description &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</th>
+				<th>Price &nbsp; &nbsp; &nbsp; &nbsp; </th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="prod : ${productsList}">
+				<td>
+					<a href="product.html">product</a>
+				</td>
+				<td>
+					<span>textname</span>
+				</td>
+				<td>
+					<span>textdescription</span>
+				</td>
+				<td>
+					<span>textprice</span>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Customer Login</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Sonian Silva Web Shop</h1>
+	<span th:text="${message}"></span>
+
+)
+    <form th:action="@{/Login}" th:object="${customer}" method="post">
+        <p><input type="text" placeholder="username" required="required" th:field="*{username}" />
+        <input type="password" placeholder="password" required="required" th:field="*{password}" /></p>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+    <p>Or create a new customer profile <a href="AddAccount">New Account</a></p>
+</body>
+</html>
